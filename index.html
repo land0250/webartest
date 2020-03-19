@@ -4,12 +4,14 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-assets>
-    <video autoplay muted id="ar-video" loop src="nanao.mp4"></video>
+    <!--<video autoplay muted id="ar-video" loop src="nanao.mp4"></video>-->
+    <img id="ar-img"src="walk.png"></img>
   </a-assets>
   <a-scene embedded arjs="debugUIEnabled:false;">
 
     <a-marker preset="hiro">
-      <a-video src="#ar-video" width="2.6" height="1.4" position="0 0 0" rotation="300 0 0" play="true"></a-video>
+      <!--<a-video src="#ar-video" width="2.6" height="1.4" position="0 0 0" rotation="300 0 0" play="true"></a-video>-->
+      <a-image src="#ar-img"></a-image>
     </a-marker>
 
     <a-entity camera></a-entity>
