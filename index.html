@@ -6,9 +6,9 @@
   <a-assets>
     <video autoplay id="ar-video" loop src="nanao2.mp4"></video>
   </a-assets>
-  <a-scene embedded arjs="debugUIEnabled:false;">
+  <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
 
-    <a-marker preset="hiro">
+    <a-marker type='pattern' url='pattern-qr20200320072203373.patt'>
       <a-video src="#ar-video" width="0.9" height="1.2" position="0 0 0" rotation="270 0 0" play="true"></a-video>
     </a-marker>
 
